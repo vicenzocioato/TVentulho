@@ -1,0 +1,194 @@
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #12244f 36%, #000000 64%);
+    color: white;
+    font-family: Montserrat;
+    font-size: 11pt;
+    font-weight: bolder;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: rgb(54, 53, 53);
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 510px;  
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid #000000;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+.inputs i {
+    color: #000000;
+    font-size: 1rem;
+    flex-shrink: 0; 
+}
+
+input {
+    border: none;
+    flex: 1;
+    padding: 0.8rem;
+    background: transparent;
+    font-size: 1rem;
+    color: #333;
+    min-width: 0;
+    width: 100%;
+}
+
+input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: #555;
+}
+
+input:focus {
+    outline: none;
+}
+
+#log {
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+#log:hover {
+    background-color: #2f3133e7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+#log:active{
+    scale: .90;
+}
+.func {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.func:hover {
+    color: #4c94c4;
+    font-weight: 600;
+}
+.logo {
+    width: 400px;   
+    height: auto;
+    margin-bottom: 1rem;
+}
+#toggleSenha{
+    cursor: pointer;
+}
+
+#link{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s;
+    color: #4c94c4;
+    font-weight: bold;
+}
+#link:hover{
+    scale: 1.1;
+}
+#link:active{
+    scale: 1;
+}
+
+@media (max-width: 700px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    input {
+        font-size: 0.95rem;
+    }
+
+    #log {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+    
+    body{
+        padding: 1rem;
+    }
+}
+.error{
+    background-color: red;
+    color: white;
+    height: 15dvh;
+    width: 25dvw;
+}
+
+#logger{
+    display: flex;
+    flex-direction: column;
+}
+.error {
+    display: none;
+    position: fixed;
+    background: #1e1e1e;
+    border: 2px solid #e74c3c;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+
+.error img {
+    position: absolute;
+    top: -10px;   
+    left: -50px;       
+    height: 10dvh;
+    width: 5dvw;
+    padding: 4px;
+}

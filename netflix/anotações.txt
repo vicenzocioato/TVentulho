@@ -1,0 +1,7 @@
+Uncaught (in promise) SyntaxError: Unexpected token 'o', "nome e senh"... is not valid JSON
+é pq to dando um echo ou die seco, ou o arquivo da requisição ta com bug.
+
+-aprender rotas e ver se precisa
+-fazer função de alterar nome
+-versão mobile
+-autenticação
